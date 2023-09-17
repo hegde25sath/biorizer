@@ -2,6 +2,7 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.pdfbox.Loader;
@@ -84,15 +85,16 @@ public class pdfReader {
         }
     }
 
-    public static void callPython() throws IOException {
+    public static void callPython() throws IOException, InterruptedException {
         // change to proper path
         Process callScript = Runtime.getRuntime().exec("python3 summarizer.py");
         System.out.println("summarizer has been called. ");
+        TimeUnit.SECONDS.sleep(10);
         Process convertTXTPDF = Runtime.getRuntime().exec("pandoc output.txt -o output.pdf");
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         boolean exit = false;
 
 //        do {
@@ -112,6 +114,8 @@ public class pdfReader {
         try {
             //Specifying the path of the file
             // Loading the PDF document
+
+            TimeUnit.SECONDS.sleep(10);
             File file = new File("output.pdf");
             PDDocument document = Loader.loadPDF(file);
 
