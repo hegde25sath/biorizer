@@ -13,7 +13,7 @@ Drag and drog a pdf with text to the root Java project directory named "test.pdf
 
 # How it works
 
-The summarizer built in Python uses the NLTK library. A very simple method is used. Text is processed and cleaned, tokenized, and the weighted frequency is found. Based on this, sentences are ranked and n sentences are outputted. After this, the bionic algorithm is incorporated which involves highlighting a selected number of letters in a word which is proven to improve user readability.
+The summarizer built in Python uses the NLTK library. A very simple method is used. Text is processed and cleaned, tokenized, and the weighted frequency is found. Based on this, sentences are ranked and n sentences are outputted. After this, the bionic algorithm is incorporated which involves highlighting a selected number of letters in a word consequenty improving user readability.
 
 # Future improvements and extensions 
 1. Accept numerous input text files not just pdf
