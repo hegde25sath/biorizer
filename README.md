@@ -1,5 +1,5 @@
 # biorizer
-A text summarizer that also outputs a summary using bionic reading - which highlights certain segments of text to make it faster to read. Built for the 2023 HelloWorld hackathon at Purdue.
+A text summarizer that incorporates a summary using bionic reading - an algorithm that highlights certain segments of text to improve user readability. Built for the 2023 HelloWorld hackathon at Purdue.
 
 # Description
 
